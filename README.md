@@ -3,5 +3,5 @@
 _behold, otters:_
 ![alt text](ottertime.jpg  "otter time!!!")
 
-this repository is purely trying to figure out how repositories work
+this repository is purely for trying to figure out how repositories work
 
