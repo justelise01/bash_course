@@ -10,7 +10,7 @@ mkdir --parent $output_directory_user
 #create and activate a conda environment with bedtools in it
 source $(dirname $(dirname $(which mamba)))/etc/profile.d/conda.sh
 mamba create --name bam2bed --yes bedtools #create environment
-mamba activate bam2bed   #activate environment
+conda activate bam2bed   #activate environment
 
 #converting .bam file to .bed file
 output_file=$output_directory_user/$(basename -s .bam $input_file).bed #important: includes filepath 
