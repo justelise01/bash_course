@@ -9,7 +9,7 @@ mkdir --parent $output_directory_user
 
 #create and activate a conda environment with bedtools in it
 source $(dirname $(dirname $(which mamba)))/etc/profile.d/conda.sh
-mamba create --name bam2bed bedtools #create environment
+mamba create --name bam2bed --yes bedtools #create environment
 mamba activate bam2bed   #activate environment
 
 #converting .bam file to .bed file
@@ -25,6 +25,6 @@ grep -P "Chr1([^0-9])" $output_file > $output_file_chr1 #make sure that there is
 wc -l $output_file_chr1 > $output_directory_user/bam2bed_number_of_rows.txt
 
 
-#variables
+#display name
 echo  Elise ten Kate
 
